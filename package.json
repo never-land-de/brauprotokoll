@@ -1,0 +1,14 @@
+{
+  "name": "nor-apa-brew-control",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/core.test.js",
+    "test:browser": "playwright test",
+    "start": "python3 tests/serve.py"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0"
+  }
+}

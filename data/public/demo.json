@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "kind": "nor-apa-public",
+  "demo": true,
+  "publishedAt": "2026-09-01T16:00:00.000Z",
+  "name": "NOR APA Altbier",
+  "style": "Altbier",
+  "number": "DEMO-001",
+  "date": "2026-08-01",
+  "status": "Genussbereit",
+  "description": "Ein synthetisches Beispiel aus unserer digitalen Brauwerkstatt. Alle Ereignisse und Messwerte dieser Beispielcharge sind frei erfunden und dienen nur zum Testen der Darstellung.",
+  "ingredients": [
+    {
+      "name": "Münchner Malz",
+      "amount": 3.1,
+      "unit": "kg",
+      "note": ""
+    },
+    {
+      "name": "Pale-Ale-Malz",
+      "amount": 1.6,
+      "unit": "kg",
+      "note": ""
+    },
+    {
+      "name": "Sauermalz",
+      "amount": 0.15,
+      "unit": "kg",
+      "note": ""
+    },
+    {
+      "name": "Caramünch II",
+      "amount": 0.55,
+      "unit": "kg",
+      "note": ""
+    },
+    {
+      "name": "Carafa Spezial II",
+      "amount": 0.032,
+      "unit": "kg",
+      "note": "Zu Beginn der zweiten Rast · Demo-Annahme"
+    },
+    {
+      "name": "Northern Brewer",
+      "amount": 45,
+      "unit": "g",
+      "note": "6,3 % Alpha angenommen · zu Kochbeginn"
+    },
+    {
+      "name": "Tettnanger",
+      "amount": 17,
+      "unit": "g",
+      "note": "Whirlpool bei 95 °C · Demo-Annahme"
+    },
+    {
+      "name": "Wyeast 1007",
+      "amount": null,
+      "unit": "Packung",
+      "note": "Demo-Auswahl · Menge vor Brauen ergänzen"
+    }
+  ],
+  "milestones": [
+    {
+      "title": "Einmaischen bestätigt",
+      "at": "2026-08-01T08:00:00.000Z"
+    },
+    {
+      "title": "Hefe angestellt",
+      "at": "2026-08-01T15:00:00.000Z"
+    },
+    {
+      "title": "Abgefüllt",
+      "at": "2026-08-16T12:00:00.000Z"
+    },
+    {
+      "title": "Genussbereit bestätigt",
+      "at": "2026-09-01T16:00:00.000Z"
+    }
+  ],
+  "measurements": [
+    {
+      "kind": "ferment-volume",
+      "label": "Menge im Gärbehälter",
+      "value": 20,
+      "unit": "l",
+      "method": "Volumenskala · synthetisch",
+      "at": "2026-08-01T15:00:00.000Z"
+    }
+  ],
+  "notes": [
+    {
+      "kind": "tasting",
+      "text": "Synthetische Verkostung: kupferbraun, malzbetont und mit trockener Bittere. Dies beschreibt kein tatsächlich gebrautes Bier.",
+      "at": "2026-09-01T16:00:00.000Z"
+    }
+  ]
+}

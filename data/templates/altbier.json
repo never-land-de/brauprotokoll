@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "name": "NOR APA Altbier – Prototyp",
+  "style": "Altbier",
+  "version": "Demo 1.0",
+  "warning": "Demo – vor echtem Brauen prüfen. Zweite Rast, Carafa-Zeitpunkt und Zutatenauswahl sind veränderbare Annahmen, keine verifizierte Rekonstruktion des Suds von 2025.",
+  "water": {
+    "main": 16.5,
+    "sparge": 14.0
+  },
+  "targets": {
+    "volume": null,
+    "extract": null
+  },
+  "ingredients": [
+    {
+      "name": "Münchner Malz",
+      "amount": 3.1,
+      "unit": "kg",
+      "note": ""
+    },
+    {
+      "name": "Pale-Ale-Malz",
+      "amount": 1.6,
+      "unit": "kg",
+      "note": ""
+    },
+    {
+      "name": "Sauermalz",
+      "amount": 0.15,
+      "unit": "kg",
+      "note": ""
+    },
+    {
+      "name": "Caramünch II",
+      "amount": 0.55,
+      "unit": "kg",
+      "note": ""
+    },
+    {
+      "name": "Carafa Spezial II",
+      "amount": 0.032,
+      "unit": "kg",
+      "note": "Zu Beginn der zweiten Rast · Demo-Annahme"
+    },
+    {
+      "name": "Northern Brewer",
+      "amount": 45,
+      "unit": "g",
+      "note": "6,3 % Alpha angenommen · zu Kochbeginn"
+    },
+    {
+      "name": "Tettnanger",
+      "amount": 17,
+      "unit": "g",
+      "note": "Whirlpool bei 95 °C · Demo-Annahme"
+    },
+    {
+      "name": "Wyeast 1007",
+      "amount": null,
+      "unit": "Packung",
+      "note": "Demo-Auswahl · Menge vor Brauen ergänzen"
+    }
+  ],
+  "checklist": [
+    "Rezept und Demo-Annahmen geprüft",
+    "Anlage, Schläuche und Gefäße vorbereitet",
+    "Zutaten abgewogen und bereitgestellt",
+    "Messgeräte und Protokoll bereit"
+  ],
+  "steps": [
+    {
+      "id": "prepare",
+      "phase": "Vorbereitung",
+      "title": "Alles bereit?",
+      "instruction": "Prüfe dein Rezept, die Zutaten und die Vorbereitungsliste. Die Vorlage enthält ausdrücklich Demo-Annahmen.",
+      "action": "Vorbereitung abschließen",
+      "temperature": null,
+      "minutes": null
+    },
+    {
+      "id": "main-water",
+      "phase": "Maischen",
+      "title": "Hauptguss einfüllen",
+      "instruction": "Fülle den Hauptguss ein. Bestätige die tatsächlich verwendete Menge.",
+      "action": "Hauptguss erfassen",
+      "temperature": null,
+      "minutes": null
+    },
+    {
+      "id": "heat-in",
+      "phase": "Maischen",
+      "title": "Auf Einmaischtemperatur heizen",
+      "instruction": "Erhitze den Hauptguss auf die eingestellte Temperatur.",
+      "action": "Einmaischtemperatur erreicht",
+      "temperature": 52,
+      "minutes": null
+    },
+    {
+      "id": "mash-in",
+      "phase": "Maischen",
+      "title": "Einmaischen",
+      "instruction": "Gib die vorbereiteten Malze ohne die spätere Carafa-Zugabe hinzu und rühre sie ein.",
+      "action": "Einmaischen bestätigen",
+      "temperature": null,
+      "minutes": null
+    },
+    {
+      "id": "heat-62",
+      "phase": "Maischen",
+      "title": "Zur ersten Rast aufheizen",
+      "instruction": "Bringe die Maische auf die Temperatur der ersten Rast.",
+      "action": "Aufheizen abgeschlossen",
+      "temperature": 62,
+      "minutes": null
+    },
+    {
+      "id": "rest-62",
+      "phase": "Maischen",
+      "title": "Erste Rast",
+      "instruction": "Prüfe die Maischetemperatur. Starte die Rast erst, wenn die Zieltemperatur erreicht ist.",
+      "action": "Temperatur erreicht – Rast starten",
+      "temperature": 62,
+      "minutes": 45,
+      "timerRequired": true
+    },
+    {
+      "id": "heat-72",
+      "phase": "Maischen",
+      "title": "Zur zweiten Rast aufheizen",
+      "instruction": "Erhöhe die Maischetemperatur auf den nächsten eingestellten Wert.",
+      "action": "Aufheizen abgeschlossen",
+      "temperature": 72,
+      "minutes": null
+    },
+    {
+      "id": "carafa",
+      "phase": "Maischen",
+      "title": "Carafa zugeben",
+      "instruction": "Gib Carafa Spezial II zu Beginn der zweiten Rast hinzu. Dieser Zeitpunkt ist eine Demo-Annahme.",
+      "action": "Carafa-Zugabe bestätigen",
+      "temperature": null,
+      "minutes": null
+    },
+    {
+      "id": "rest-72",
+      "phase": "Maischen",
+      "title": "Zweite Rast",
+      "instruction": "Prüfe die Temperatur und starte die zweite Rast nach der bestätigten Carafa-Zugabe.",
+      "action": "Temperatur erreicht – Rast starten",
+      "temperature": 72,
+      "minutes": 35,
+      "guard": "carafa",
+      "timerRequired": true
+    },
+    {
+      "id": "iodine",
+      "phase": "Maischen",
+      "title": "Jodprobe dokumentieren",
+      "instruction": "Führe die vorgesehene Probe durch. Halte Ergebnis oder Abweichungen als Notiz fest.",
+      "action": "Jodprobe durchgeführt",
+      "temperature": null,
+      "minutes": null
+    },
+    {
+      "id": "heat-78",
+      "phase": "Maischen",
+      "title": "Zum Abmaischen aufheizen",
+      "instruction": "Erhöhe die Temperatur auf den eingestellten Abmaischwert.",
+      "action": "Aufheizen abgeschlossen",
+      "temperature": 78,
+      "minutes": null
+    },
+    {
+      "id": "mash-out",
+      "phase": "Maischen",
+      "title": "Abmaischrast",
+      "instruction": "Prüfe die Temperatur vor Beginn der Haltezeit.",
+      "action": "Temperatur erreicht – Rast starten",
+      "temperature": 78,
+      "minutes": 15,
+      "timerRequired": true
+    },
+    {
+      "id": "lauter",
+      "phase": "Läutern",
+      "title": "Läutern & Nachgüsse",
+      "instruction": "Dokumentiere jeden Nachguss mit seiner tatsächlichen Menge. Erfasse die Pfannevollmenge separat als Messwert.",
+      "action": "Läutern abgeschlossen",
+      "temperature": null,
+      "minutes": null
+    },
+    {
+      "id": "heat-boil",
+      "phase": "Kochen",
+      "title": "Zum Kochen aufheizen",
+      "instruction": "Bringe die Würze zum Kochen. Die Kochzeit startet erst im übernächsten Schritt nach der Bittergabe.",
+      "action": "Würze kocht",
+      "temperature": null,
+      "minutes": null
+    },
+    {
+      "id": "bitter",
+      "phase": "Kochen",
+      "title": "Bittergabe zu Kochbeginn",
+      "instruction": "Gib Northern Brewer zu. Bestätige Menge und tatsächlichen Zugabezeitpunkt; dieser ist anschließend der Bezug für den Kochstart.",
+      "action": "Bittergabe bestätigen",
+      "temperature": null,
+      "minutes": null
+    },
+    {
+      "id": "boil",
+      "phase": "Kochen",
+      "title": "Würze kochen",
+      "instruction": "Bestätige den Kochbeginn. Der erfasste Zeitpunkt der Bittergabe ist der Zeitbezug (Minute 0).",
+      "action": "Kochbeginn bestätigen – Timer starten",
+      "temperature": null,
+      "minutes": 75,
+      "guard": "bitter",
+      "timerRequired": true
+    },
+    {
+      "id": "whirlpool-add",
+      "phase": "Whirlpool",
+      "title": "Whirlpool vorbereiten (optional)",
+      "instruction": "Lasse die Würze auf die eingestellte Temperatur kommen. Bestätige Temperatur und Tettnanger-Zugabe gemeinsam.",
+      "action": "Temperatur erreicht & Zugabe bestätigen",
+      "temperature": 95,
+      "minutes": null
+    },
+    {
+      "id": "whirlpool",
+      "phase": "Whirlpool",
+      "title": "Whirlpool-Ruhe (optional)",
+      "instruction": "Starte die Ruhezeit nach bestätigter Temperatur und Zugabe. Ohne Whirlpool beide Schritte begründet überspringen.",
+      "action": "Whirlpool-Timer starten",
+      "temperature": 95,
+      "minutes": 30,
+      "guard": "whirlpool-add",
+      "timerRequired": true
+    },
+    {
+      "id": "cool",
+      "phase": "Kühlen & Anstellen",
+      "title": "Kühlen & umfüllen",
+      "instruction": "Kühle nach deinem geprüften Rezept. Erfasse Würzetemperatur und Menge im Gärbehälter separat.",
+      "action": "Kühlen und Umfüllen bestätigt",
+      "temperature": null,
+      "minutes": null
+    },
+    {
+      "id": "yeast",
+      "phase": "Kühlen & Anstellen",
+      "title": "Hefe anstellen",
+      "instruction": "Prüfe deine Hefeauswahl und erfasse die tatsächliche Hefezugabe.",
+      "action": "Hefezugabe bestätigen",
+      "temperature": null,
+      "minutes": null
+    },
+    {
+      "id": "ferment",
+      "phase": "Gärung",
+      "title": "Gärung begleiten",
+      "instruction": "Dokumentiere Messungen mit Einheit und Methode sowie Beobachtungen. Die Entscheidung zur Abfüllung triffst du anhand deines geprüften Verfahrens.",
+      "action": "Gärphase abschließen",
+      "temperature": null,
+      "minutes": null
+    },
+    {
+      "id": "bottle",
+      "phase": "Abfüllung",
+      "title": "Abfüllung dokumentieren",
+      "instruction": "Fülle erst nach eigener Prüfung ab. Erfasse die tatsächliche Abfüllmenge.",
+      "action": "Abfüllung bestätigen",
+      "temperature": null,
+      "minutes": null
+    },
+    {
+      "id": "mature",
+      "phase": "Reifung",
+      "title": "Zeit für Charakter",
+      "instruction": "Halte Reifebedingungen und datierte Verkostungen fest. Die App berechnet keine Reife oder Karbonisierung.",
+      "action": "Reifung abgeschlossen",
+      "temperature": null,
+      "minutes": null
+    },
+    {
+      "id": "ready",
+      "phase": "Genussbereit",
+      "title": "Bereit für das erste Glas?",
+      "instruction": "Bestätige deine eigene Entscheidung. Auch danach kannst du weitere Verkostungen ergänzen.",
+      "action": "Genussbereit bestätigen",
+      "temperature": null,
+      "minutes": null
+    }
+  ]
+}
